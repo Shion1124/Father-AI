@@ -1,4 +1,46 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* Force Mermaid diagram elements to be visible in dark mode */
+.mermaid-chart {
+  overflow-x: auto !important;
+  /* Enable scroll if diagram is too wide */
+  padding: 10px;
+  background-color: #1e1e2e;
+  border-radius: 8px;
+}
+
+.mermaid-chart svg {
+  min-width: 100% !important;
+  /* Ensure it takes at least full width */
+  height: auto !important;
+  /* background-color: #1e1e2e !important; Removed from here, moved to container */
+}
+
+.mermaid-chart .node rect,
+.mermaid-chart .node circle,
+.mermaid-chart .node polygon,
+.mermaid-chart .node path {
+  fill: #2d2d44 !important;
+  stroke: #a6accd !important;
+  stroke-width: 2px !important;
+}
+
+.mermaid-chart .node .label {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+}
+
+.mermaid-chart .edgePath .path {
+  stroke: #a6accd !important;
+  stroke-width: 2px !important;
+}
+
+.mermaid-chart .edgeLabel {
+  background-color: #1e1e2e !important;
+  color: #ffffff !important;
+}
+
 
 :root {
   --background: #ffffff;
