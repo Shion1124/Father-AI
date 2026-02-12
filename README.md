@@ -54,7 +54,7 @@ npm install
 ```env
 # Ollama (OpenAI互換エンドポイント)
 QWEN_API_ENDPOINT=http://localhost:11434/v1
-QWEN_MODEL_NAME=qwen2.5-coder:7b
+QWEN_MODEL_NAME=qwen3:8b   
 # API KeyはOllamaでは不要ですが、SDKの仕様上ダミー値を設定
 OPENAI_API_KEY=ollama
 ```
